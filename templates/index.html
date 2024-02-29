@@ -1,0 +1,55 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+   
+    <div class="container-fluid hero-header bg-light py-5 mb-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 mb-3 animated slideInDown">Welcome to Alex Coffee House</h1>
+                    <p class="animated slideInDown">A Taste of Ethiopia!</p>
+                    <a href="#" class="btn btn-primary py-3 px-4 animated slideInDown">Explore Our Coffee</a>
+                </div>
+                <div class="col-lg-6 animated fadeIn">
+                    <img class="img-fluid animated pulse infinite" style="animation-duration: 3s;"src="{% static 'img/coff-1.jpeg' %}" alt="Coffee House Image">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <section id="menu">
+            <h2>Alex's Coffee Menu</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="{% static 'img/be.jpeg' %}" class="card-img-top" alt="Coffee Item 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Ethiopian Coffee Beans</h5>
+                            <a href="#" class="btn btn-primary">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="{% static 'img/cob.jpeg' %}" class="card-img-top" alt="Coffee Item 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Ethiopian Coffee Blend</h5>
+                            <a href="#" class="btn btn-primary">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="{% static 'img/ac.jpeg' %}" class="card-img-top" alt="Coffee Item 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Ethiopian Coffee Accessories</h5>
+                            <a href="#" class="btn btn-primary">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+{% endblock %}

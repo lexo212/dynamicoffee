@@ -1,0 +1,77 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+   
+    <div class="container-fluid hero-header bg-light py-5 mb-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 mb-3 animated slideInDown">Welcome to Alex Coffee House</h1>
+                    <p class="animated slideInDown">Experience the Finest Ethiopian Coffee</p>
+                    <a href="#" class="btn btn-primary py-3 px-4 animated slideInDown">View Menu</a>
+                </div>
+                <div class="col-lg-6 animated fadeIn">
+                    <img class="img-fluid animated pulse infinite" style="animation-duration: 3s;"src="{% static 'img/bi.jpeg' %}" alt="Coffee House Image">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <section id="menu">
+            <h2>Explore Our Ethiopian Coffee Menu</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="{% static 'img/ye.jpg' %}" class="card-img-top" alt="Ethiopian Coffee 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Ethiopian Yirgacheffe</h5>
+                            <p class="card-text">A medium-bodied coffee with fruity and floral notes, sourced from the Yirgacheffe region of Ethiopia.</p>
+                            <a href="#" class="btn btn-primary">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="{% static 'img/b4.jpeg' %}" class="card-img-top" alt="Ethiopian Coffee 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Ethiopian Sidamo</h5>
+                            <p class="card-text">A rich and full-bodied coffee with fruity and wine-like flavors, sourced from the Sidamo region of Ethiopia.</p>
+                            <a href="#" class="btn btn-primary">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="{% static 'img/Ethiopian Harrar Coffee.jpeg' %}" class="card-img-top" alt="Ethiopian Coffee 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Ethiopian Harrar</h5>
+                            <p class="card-text">An intense and fruity coffee with a strong aroma and complex flavor profile, sourced from the Harrar region of Ethiopia.</p>
+                            <a href="#" class="btn btn-primary">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        
+        <section id="services">
+            
+            <h2>Our Services</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Coffee Tasting Events</h4>
+                    <p>Join us for exclusive coffee tasting events where you can sample a variety of Ethiopian coffees and learn about their unique flavors and profiles.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Barista Training Workshops</h4>
+                    <p>Learn the art of brewing the perfect cup of coffee with our barista training workshops, led by our experienced and knowledgeable coffee experts.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Coffee Bean Subscription</h4>
+                    <p>Sign up for our coffee bean subscription service and receive freshly roasted Ethiopian coffee beans delivered straight to your door on a regular basis.</p>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+
+{% endblock %}

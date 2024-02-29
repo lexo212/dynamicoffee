@@ -1,0 +1,64 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+    
+    <div class="container-fluid hero-header bg-light py-5 mb-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 mb-3 animated slideInDown">About Us</h1>
+                    <nav aria-label="breadcrumb animated slideInDown">
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item"><a href="#index">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="col-lg-6 animated fadeIn">
+                    <img class="img-fluid animated pulse infinite" style="animation-duration: 3s;" src="{% static 'img/coff.jpeg' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+  
+   
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <img class="img-fluid" src="{% static 'img/o.jpeg' %}" alt="About Us Image">
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="h-100">
+                        <h1 class="display-6">Our Story</h1>
+                        <p class="text-primary fs-5 mb-4">Discover the Journey Behind Our Passion for Coffee</p>
+                        <p>At our coffee house, our journey began with a shared love for coffee and a desire to create a space where people could come together to enjoy quality coffee and meaningful conversations. From our humble beginnings to where we are today, our dedication to serving the finest coffee remains unwavering.</p>
+                        <p>With each cup we brew, we aim to capture the essence of the coffee bean's origin, ensuring that every sip is a journey to the heart of coffee culture. We source our beans from sustainable and ethical producers, supporting local communities and preserving the rich heritage of coffee-growing regions.</p>
+                        <p>Our commitment to excellence extends beyond the coffee itself. It's about creating an experience that delights the senses and fosters connections. Whether you're a coffee connoisseur or new to the world of specialty coffee, we invite you to join us on our journey as we continue to craft exceptional coffee experiences for our community.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <img class="img-fluid" src="{% static 'img/alex.jpeg' %}" alt="Our Team Image">
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="h-100">
+                        <h1 class="display-6">About Us</h1>
+                        <p class="text-primary fs-5 mb-4">Meet the Team Behind the Passion</p>
+                        <p>Our team is comprised of dedicated coffee enthusiasts who share a common goal: to deliver exceptional coffee experiences with warmth and hospitality. From our skilled baristas to our friendly staff, each member of our team plays a vital role in creating the welcoming atmosphere that defines our coffee house.</p>
+                        <p>As coffee lovers ourselves, we are committed to continuous learning and improvement. We strive to stay up-to-date with the latest trends and techniques in coffee brewing, ensuring that we always deliver the highest quality coffee to our customers.</p>
+                        <p>At our coffee house, we're not just passionate about coffee; we're passionate about people. We believe that coffee has the power to bring people together, spark conversations, and create lasting memories. It's this belief that drives everything we do, from the beans we select to the service we provide.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
